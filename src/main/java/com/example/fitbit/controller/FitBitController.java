@@ -25,7 +25,7 @@ public class FitBitController {
     return new ResponseEntity<>(response, HttpStatus.OK);
   }
 
-  @GetMapping(path = "/reward/customer/1", produces = "text/plain")
+  @GetMapping(path = "/reward/customer/1", produces = "text/html")
   public ResponseEntity<String> get() {
     String response = fitbitService.get();
     return new ResponseEntity<>(response, HttpStatus.OK);
